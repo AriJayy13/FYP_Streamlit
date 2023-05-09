@@ -122,7 +122,7 @@ if selected == "Home":
     df = get_brent_oil_prices(api_key, start_date, end_date)
 
     if df is not None:
-        fig = px.line(df, x="DATE", y="DCOILBRENTEU", title="Brent Oil Prices (Past 5 Days)", labels={"DATE": "Date", "DCOILBRENTEU": "Price (USD)"})
+        fig = px.line(df, x="DATE", y="DCOILBRENTEU", title="Brent Oil Prices", labels={"DATE": "Date", "DCOILBRENTEU": "Price (USD)"})
         st.plotly_chart(fig)
 
         # Print the latest available Brent Oil price
