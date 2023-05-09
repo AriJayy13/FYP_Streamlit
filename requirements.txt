@@ -3,5 +3,5 @@ plotly
 requests
 streamlit_option_menu
 matplotlib
-sklearn
+scikit-learn
 tensorflow
