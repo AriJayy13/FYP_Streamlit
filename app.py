@@ -80,7 +80,7 @@ if selected == "Home":
             print("Error: Unable to fetch data.")
             return None
 
-    api_key = "CYT9KLKTLECSR3X2"  # Replace with your Alpha Vantage API key
+    api_key = "CYT9KLKTLECSR3X2"  # Replace with Alpha Vantage API key
 
     df = get_euro_to_usd(api_key)
 
@@ -115,7 +115,7 @@ if selected == "Home":
         else:
             print("Error: Unable to fetch data.")
             return None
-    api_key = "8551ea1d6053004447ea8a0dc7d580b6"  # Replace with your FRED API key
+    api_key = "8551ea1d6053004447ea8a0dc7d580b6"  # Replace with  FRED API key
     end_date = pd.Timestamp.today().strftime("%Y-%m-%d")
     start_date = (pd.Timestamp.today() - pd.DateOffset(days=5)).strftime("%Y-%m-%d")
 
@@ -282,12 +282,6 @@ if selected == "Tool":
                 return data
             data = plot_prediction_vs_truth(predict, Y_test)
             st.line_chart(data)
-
-
-            
-  
-
-            # Assuming you have the 'predict' and 'Y_test' arrays from your model
 
             
 
